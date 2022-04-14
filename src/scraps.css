@@ -1,0 +1,75 @@
+
+
+datafittext {
+    /* Sized via the viewport, but the --width variable could be set by JS based on the element or parent's width. */
+    --width: 90vw;
+  
+    /* Adjust scale depending on your exact font.  */
+    --scale: 0.090;
+  
+    font-size: calc(var(--width) / (var(--length, 1) * 0.5) * var(--scale, 1));
+  
+    font-family:  "Nimbus Sans D OT";
+    font-weight: 600;
+    line-height: 1;
+    margin: 1rem 0;
+  }
+  
+  /* ---------------------------------- */
+  
+  html {
+    height: 100%;
+    display: flex;
+  }
+  body {
+  
+    text-align: center;
+  }
+  
+  html {
+    background: #fbc490;
+    color: #084177;
+  }
+  
+  
+  body {
+    background-image: url("");
+  }
+  
+  div { 
+    text-align: center;
+    position: relative;
+  }
+  div datafittext { 
+    margin: 0;
+   width:100%;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  .dark h1 {
+    color: #fff;
+  }
+  
+  div img { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+  }
+  .dark {
+    background: #000;
+  }
+  
+  .dark img {
+    mix-blend-mode: darken;
+  }
+  
+  
+  .crop {
+    object-fit: cover;
+  }
+
+  .foto-cover{
+    display:block;
+    margin: 0 auto;
+  }

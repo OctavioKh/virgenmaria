@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/fit-text-webcomponent"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+          "punch punch" "hello hello" "wonderful2 wonderful2"
+          "awesome world" "wonderful wonderful"
+          "world2 awesome2" "divinity divinity3 ";
+        background: black;
+        min-height: 100vh;
+        box-sizing: border-box;
+      }
+
+      .container > * {
+        min-width: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .hello {
+        grid-area: hello;
+        background: white;
+        font-family: Helvetica;
+        text-transform: uppercase;
+      }
+
+      .punch {
+        grid-area: punch;
+        background: #e8026c;
+        font-family: Monaco;
+      }
+
+      .awesome {
+        grid-area: awesome;
+        background: white;
+        color: black;
+      }
+
+      .world {
+        grid-area: world;
+        background: BLACK;
+        color: white;
+        font-family: Arial;
+      }
+
+      
+
+      .wonderful {
+        grid-area: wonderful;
+        background: black;
+        color: red;
+      }
+
+      .wonderful2 {
+        grid-area: wonderful2;
+        background: red;
+        color: black;
+      }
+
+      .awesome2 {
+        grid-area: awesome2;
+        background: white;
+        color: black;
+      }
+
+      .world2 {
+        grid-area: world2;
+        background: black;
+        color: white;
+        font-family: Arial;
+      }
+
+      .divinity {
+        grid-area: divinity;
+        background: red;
+        color: black;
+      }
+
+      .divinity2 {
+        grid-area: divinity2;
+        background: white;
+        color: black;
+      }
+
+      .divinity3 {
+        grid-area: divinity3;
+        background: black;
+        color: white;
+        font-family: Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <fit-text class="hello"><strong>WASTED FATES</strong></fit-text>
+      <fit-text class="wonderful2">NIN NIN NIN NIN NIN NIN</fit-text>
+      <fit-text class="awesome"
+        ><em
+          >ONCE UPON A <br />
+          TIME WHERE<br />
+          THE COLD WIND <br />
+          NOW BLOWS</em
+        ></fit-text
+      >
+      <fit-text class="world"><strong>PEACE</strong></fit-text>
+      <fit-text class="wonderful">XXXXXXX</fit-text>
+      <fit-text class="world2"><strong>WAR</strong></fit-text>
+      <fit-text class="awesome2"
+        ><em
+          >ONCE UPON A <br />
+          TIME WHERE<br />
+          THE COLD WIND <br />
+          NOW BLOWS</em
+        ></fit-text
+      >
+
+      <fit-text class="divinity"><strong>DIVINITY</strong></fit-text>
+      <fit-text class="divitiny2">SPIRITUALITY</fit-text>
+      <fit-text class="divinity3"><strong>FORGIVENESS</strong></fit-text>
+    </div>
+  </body>
+</html>

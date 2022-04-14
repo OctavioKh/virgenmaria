@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import MainPage2 from './Main2';
+import status from './assets/img/status-02.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+<>
+
+<div className="iphone-x">
+  {/* <p className='carrier'>Virgen Maria </p> */}
+  <div className="container-head">
+  <div className="item-head">Virgen María</div>
+  <div className="item-head status1"><img src={status} /> </div>
+  
+</div>
+
+
+  <i>Speaker</i>
+  <b>Camera</b> 
+ 
+<MainPage2/>
+
+</div>
+
+
+
+
+</>
   );
 }
 
